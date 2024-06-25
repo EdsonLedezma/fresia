@@ -1,0 +1,58 @@
+.header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .actions {
+    display: flex;
+  }
+  
+  .login,
+  .signup {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login {
+    background-color: #eee;
+    color: #333;
+  }
+  
+  .signup {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
