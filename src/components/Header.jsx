@@ -1,36 +1,50 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Header.css';
+
+
+
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate('/login');
+  };
+
+  const handleSignUpClick = () => {
+    navigate('/registro');
+  };
+
   return (
     <header className="header">
       <div className="container">
         <div className="logo">
           <a href="/">
-            <img src="./logo.svg" alt="Logo" />
+            <img src="./static/logoHeader.png" alt="Logo" />
           </a>
         </div>
         <nav className="nav">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="/">Inicio</a>
             </li>
             <li>
-              <a href="/features">Features</a>
+              <a href="/features">Conocenos</a>
             </li>
             <li>
-              <a href="/pricing">Pricing</a>
+              <a href="/pricing">Asistente</a>
             </li>
             <li>
-              <a href="/faqs">FAQs</a>
+              <a href="/faqs">Tutoriales</a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="/about">Estadisticas</a>
             </li>
           </ul>
         </nav>
         <div className="actions">
-          <button className="login">Login</button>
-          <button className="signup">Sign-up</button>
+          <button className="login" onClick={handleLoginClick}>Login</button>
+          <button className="signup" onClick={handleSignUpClick}>Sign-up</button>
         </div>
       </div>
     </header>

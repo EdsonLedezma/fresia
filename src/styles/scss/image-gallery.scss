@@ -1,9 +1,9 @@
 $ig-small-screen: 768px !default;
 $ig-xsmall-screen: 480px !default;
-$ig-white: #fff !default;
-$ig-black: #000 !default;
+$ig-white: #A5A692 !default;
+$ig-black: #A5A692 !default;
 $ig-blue: #337ab7 !default;
-$ig-background-black: rgba(0, 0, 0, 0.4) !default;
+$ig-background-black: rgba(165, 166, 146) !default;
 $ig-transparent: rgba(0, 0, 0, 0) !default;
 $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
@@ -287,7 +287,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
   .image-gallery-bullet {
     appearance: none;
-    background-color: transparent;
+    background-color: #A5A692;
     border: 1px solid $ig-white;
     border-radius: 50%;
     box-shadow: $ig-shadow;
@@ -376,7 +376,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
     width: 100px;
 
     @media (max-width: $ig-small-screen) {
-      width: 81px; // 75px + 6px for border
+      width: 90px; // 75px + 6px for border
     }
 
     .image-gallery-thumbnails {
@@ -477,7 +477,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
 .image-gallery-thumbnail-label {
   box-sizing: border-box;
-  color: white;
+  color: #A5A692;
   font-size: 1em;
   left: 0;
   line-height: 1em;
@@ -509,4 +509,5 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
     font-size: 0.8em;
     padding: 5px 10px;
   }
+
 }

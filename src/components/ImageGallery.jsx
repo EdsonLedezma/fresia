@@ -201,7 +201,6 @@ class ImageGallery extends React.Component {
     }
   }
 
-  
   componentWillUnmount() {
     const { useWindowKeyDown } = this.props;
     window.removeEventListener("mousedown", this.handleMouseDown);

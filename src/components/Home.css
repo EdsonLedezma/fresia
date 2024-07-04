@@ -1,0 +1,53 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-container {
+overflow: hidden;
+margin-bottom: 20px; /* Espacio entre el carrusel y las tarjetas */
+  
+}
+
+
+
+.card {
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card .content {
+  padding: 15px;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+}
+
+.card p {
+  color: #555;
+}
+
+.card .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.card .button:hover {
+  background-color: #0056b3;
+}

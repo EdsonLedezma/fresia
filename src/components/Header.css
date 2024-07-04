@@ -1,6 +1,6 @@
 .header {
-    background-color: #fff;
-    padding: 20px;
+    background-color: #025E73;
+    padding: 10px;
     border-bottom: 1px solid #eee;
   }
   
@@ -25,16 +25,19 @@
   
   .nav li {
     margin-right: 20px;
+    padding-left: 25px;
   }
   
   .nav a {
-    text-decoration: none;
-    color: #333;
+    text-decoration: solid;
+    color: #011F26;
     font-weight: bold;
+    font-size: 22px;
   }
   
   .actions {
     display: flex;
+    padding-left: 40px;
   }
   
   .login,
@@ -47,12 +50,12 @@
   }
   
   .login {
-    background-color: #eee;
-    color: #333;
+    background-color: #011F26;
+    color: #fff;
   }
   
   .signup {
-    background-color: #007bff;
+    background-color: #A5A692;
     color: #fff;
   }
   

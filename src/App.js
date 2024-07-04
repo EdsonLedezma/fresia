@@ -1,31 +1,45 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'; 
-import ImageGallery from 'react-image-gallery'; 
-import 'react-image-gallery/styles/css/image-gallery.css';
+import "react-image-gallery/styles/css/image-gallery.css";
+import Login from './Auth/Login';
+import Register from './Auth/Register';
 import Header from './components/Header';
-
-
-const images = [
-  {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
-  },
-  {
-    original: "./static/1.jpg",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
-  },
-  {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
-  },
-];
+import Home from './components/Home';
+import AboutUs from './components/AboutUs';
+import Footer from './components/Footer'; 
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <ImageGallery items={images} />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          {/* Rutas para Login y Register */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/registro" element={<Register />} />
+          
+          {/* Rutas que incluyen el Header, Footer y demás contenido */}
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="about-us" element={<AboutUs />} />
+          </Route>
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+// Componente Layout para envolver el Header, Footer y contenido principal
+const Layout = () => {
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
