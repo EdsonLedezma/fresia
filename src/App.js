@@ -14,12 +14,10 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          {/* Rutas para Login y Register */}
+          
           <Route path="/login" element={<Login />} />
           <Route path="/registro" element={<Register />} />
-          
-          {/* Rutas que incluyen el Header, Footer y demás contenido */}
-          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="about-us" element={<AboutUs />} />
           </Route>
