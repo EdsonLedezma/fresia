@@ -5,13 +5,7 @@ import './AboutUs.css';
 const AboutUs = () => {
   return (
     <div className="about-us">
-      <div className="hero-section">
-        <img src="/static/collage.jpg" alt="Hero" className="hero-image" />
-        <div className="hero-text">
-          <h1>Bienvenidos a Nuestra Empresa</h1>
-          <p>Innovando el futuro, un paso a la vez.</p>
-        </div>
-      </div>
+    
 
       <div className="jumbotron">
         <h2>Nuestra Misión</h2>

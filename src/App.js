@@ -8,18 +8,20 @@ import Header from './components/Header';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Footer from './components/Footer'; 
+import Frenchi from './components/Frenchi';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          
+        
           <Route path="/login" element={<Login />} />
           <Route path="/registro" element={<Register />} />
             <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="about-us" element={<AboutUs />} />
+            <Route path="/frenchi" element={<Frenchi />} />
           </Route>
         </Routes>
       </div>
@@ -27,7 +29,7 @@ function App() {
   );
 }
 
-// Componente Layout para envolver el Header, Footer y contenido principal
+
 const Layout = () => {
   return (
     <>
@@ -35,6 +37,7 @@ const Layout = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/frenchi" element={<Frenchi />} />
       </Routes>
       <Footer />
     </>

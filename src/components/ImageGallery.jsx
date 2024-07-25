@@ -51,7 +51,7 @@ class ImageGallery extends React.Component {
       thumbsStyle: { transition: `all ${props.slideDuration}ms ease-out` },
       isFullscreen: false,
       isSwipingThumbnail: false,
-      isPlaying: false,
+      isPlaying: true,
     };
     this.loadedImages = {};
     this.imageGallery = React.createRef();
@@ -1709,7 +1709,7 @@ ImageGallery.defaultProps = {
   onErrorImageURL: "",
   additionalClass: "",
   showNav: true,
-  autoPlay: false,
+  autoPlay: true,
   lazyLoad: false,
   infinite: true,
   showIndex: false,

@@ -6,8 +6,8 @@
   }
   
   .footer {
-    background-color: #025E73;
-    color: #F2A71B;
+    background-color: rgb(74, 135, 248);
+    color: #FFF;
     padding: 20px 0;
   }
   
@@ -33,7 +33,7 @@
   }
   
   .footer-section p, .footer-section ul, .footer-section a {
-    color: #F2A71B;
+    color: #FFF;
     text-decoration: none;
   }
   
@@ -58,7 +58,7 @@
   
   .social-links a {
     margin-bottom: 10px;
-    color: #F2A71B;
+    color: #FFFF;
     text-decoration: none;
   }
   
@@ -71,7 +71,7 @@
   
   .footer-bottom p {
     margin: 0;
-    color: #F2A71B;
+    color: #FFF;
   }
   
   /* Responsiveness */

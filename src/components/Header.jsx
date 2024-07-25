@@ -20,7 +20,7 @@ const Header = () => {
       <div className="container">
         <div className="logo">
           <a href="/">
-            <img src="./static/logoHeader.png" alt="Logo" />
+            <img src="./static/logofres.png" alt="Logo" />
           </a>
         </div>
         <nav className="nav">
@@ -32,19 +32,19 @@ const Header = () => {
               <a href="/features">Conocenos</a>
             </li>
             <li>
-              <a href="/pricing">Asistente</a>
+              <a href="/frenchi">Asistente</a>
             </li>
             <li>
               <a href="/faqs">Tutoriales</a>
             </li>
             <li>
-              <a href="/about">Estadisticas</a>
+              <a href="/about-us">Estadisticas</a>
             </li>
           </ul>
         </nav>
         <div className="actions">
-          <button className="login" onClick={handleLoginClick}>Login</button>
-          <button className="signup" onClick={handleSignUpClick}>Sign-up</button>
+          <button className="login" onClick={handleLoginClick}>Inicia sesion</button>
+          <button className="signup" onClick={handleSignUpClick}>Registrate</button>
         </div>
       </div>
     </header>

@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -15,39 +14,9 @@
     padding: 20px;
   }
   
-  .hero-section {
-    position: relative;
-  }
-  
-  .hero-image {
-    width: 100%;
-    height: auto;
-    
-    object-fit: cover;
-  }
-  
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .hero-text h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  
-  .hero-text p {
-    font-size: 18px;
-  }
   
   .jumbotron {
-    background-color: #007BFF;
+    background-color: rgb(74, 135, 248);
     color: #fff;
     padding: 30px 20px;
     margin: 20px 0;

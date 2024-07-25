@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
-import AboutUs from './AboutUs';
+
 
 const images = [
   {
@@ -22,37 +22,61 @@ const images = [
 const Home = () => {
   return (
     <div>
-      <AboutUs></AboutUs>
-    <div className="gallery-container">
-        <ImageGallery items={images} />
-      </div>
-    <div className="container">
-      
-      <div className="card">
-        <img src="/static/logofres.png" alt="Web" />
-        <div className="content">
-          <h2>Fazt Web</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt fuga accusantium excepturi quia, voluptates obcaecati nam in voluptas perferendis velit harum dignissimos quasi ex? Tempore repellat quo doloribus magnam.</p>
-          <a href="#" className="button">Go to Fazt Web</a>
+       <div className="about-us">
+      <div className="hero-section">
+        <img src="/static/collage.jpg" alt="Hero" className="hero-image" />
+        <div className="hero-text">
+          <h1>Bienvenido a FRES IA</h1>
+          <p>La inteligencia que tu auto necesita</p>
         </div>
       </div>
-      <div className="card">
+      </div>
+   
+    <div className="container">
+            <div className="card">
         <img src="https://via.placeholder.com/300x200?text=Blog" alt="Blog" />
         <div className="content">
-          <h2>Fazt Blog</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt fuga accusantium excepturi quia, voluptates obcaecati nam in voluptas perferendis velit harum dignissimos quasi ex? Tempore repellat quo doloribus magnam.</p>
-          <a href="#" className="button">Go to Fazt Blog</a>
+          <h2>Desempeño perfecto, gracias a la IA</h2>
+          <p> FRES IA analiza patrones de sonido 
+            que son imperceptibles para el oído humano, identificando 
+            anomalías y posibles fallas mecánicas con una impresionante 
+            precisión, aseguramos un proceso de diagnóstico continuo y en 
+            tiempo real, lo que permite un mantenimiento preventivo y 
+            correctivo confiable para los conductores y mecánicos,
+            si tienes dudas comprueba nuestras estadisticas.</p>
+          <a href="#" className="button">Estadisticas aqui</a>
         </div>
       </div>
       <div className="card">
         <img src="https://via.placeholder.com/300x200?text=Resources" alt="Resources" />
         <div className="content">
-          <h2>Fazt Resources</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt fuga accusantium excepturi quia, voluptates obcaecati nam in voluptas perferendis velit harum dignissimos quasi ex? Tempore repellat quo doloribus magnam.</p>
-          <a href="#" className="button">Go to Fazt Resources</a>
+          <h2>Asistencia inteligente, autos sin problemas</h2>
+          <p>puedes preguntarle cualquier duda a nuestro asistente mecánico Frenchi,
+            desde como realizar un cambio de aceite, especificaciones técnicas de tu vehiculo,
+            consejos de conducción, reglas de transito o cualquier cosa que tenga que ver con el
+            ámbito automotriz.
+
+          </p>
+          <a href="#" className="button">Conoce a Frenchi</a>
+        </div>
+      </div>
+      <div className="card">
+        <img src="/static/logofres.png" alt="Web" />
+        <div className="content">
+          <h2>Con FRES IA, cada sonido cuenta</h2>
+          <p>Si durante tu conducción diaria comienzas a escuchar
+             un nuevo ruido en tu auto no lo dejes pasar, podria 
+             no ser importante o ser sintoma de un posible desajuste
+             mecánico, no corras el riesgo de sufrir una 
+             falla con el paso del tiempo, si te interesa aprender a 
+             usar Fres IA tenemos un tutorial completo</p>
+          <a href="#" className="button">Tutorial aqui</a>
         </div>
       </div>
     </div>
+    <div className="gallery-container">
+        <ImageGallery items={images} />
+      </div>
     </div>
   );
 };
