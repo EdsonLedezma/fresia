@@ -1,5 +1,5 @@
 .header {
-    background-color: rgb(74, 135, 248);
+    background-color: #025E73;
     padding: 10px;
     border-bottom: 1px solid #eee;
   }
@@ -55,7 +55,7 @@
   }
   
   .login {
-    background-color: rgb(212, 23, 98);
+    background-color: #F2A71B;
     color: #fff;
   }
   
