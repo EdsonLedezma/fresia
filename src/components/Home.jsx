@@ -34,7 +34,7 @@ const Home = () => {
    
     <div className="container">
             <div className="card">
-        <img src="https://via.placeholder.com/300x200?text=Blog" alt="Blog" />
+        <img src="static\image.png" alt="Blog" />
         <div className="content">
           <h2>Desempeño perfecto, gracias a la IA</h2>
           <p> FRES IA analiza patrones de sonido 
@@ -48,7 +48,7 @@ const Home = () => {
         </div>
       </div>
       <div className="card">
-        <img src="https://via.placeholder.com/300x200?text=Resources" alt="Resources" />
+        <img src="static/IAauto.png" alt="Resources" />
         <div className="content">
           <h2>Asistencia inteligente, autos sin problemas</h2>
           <p>puedes preguntarle cualquier duda a nuestro asistente mecánico Frenchi,

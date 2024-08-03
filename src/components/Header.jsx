@@ -29,16 +29,16 @@ const Header = () => {
               <a href="/">Inicio</a>
             </li>
             <li>
-              <a href="/features">Conocenos</a>
+              <a href="/about-us">Conocenos</a>
             </li>
             <li>
               <a href="/frenchi">Asistente</a>
             </li>
             <li>
-              <a href="/faqs">Tutoriales</a>
+              <a href="/tutoriales">Tutoriales</a>
             </li>
             <li>
-              <a href="/about-us">Estadisticas</a>
+              <a href="/estadisticas">Estadisticas</a>
             </li>
           </ul>
         </nav>
