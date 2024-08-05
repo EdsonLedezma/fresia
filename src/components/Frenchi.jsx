@@ -63,7 +63,7 @@ const Frenchi = () => {
     <div className="frenchi-container">
       <h1 className="title">Pregúntale a Frenchi</h1>
       <p className="description">
-        Puedes resolver tus dudas acerca de tu vehículo. Pídeme tips de manejo, buenas prácticas para el cuidado de tu vehículo o lo que prefieras.
+        Puedes resolver tus dudas acerca de tu vehículo. Pídeme tips de manejo, buenas prácticas para el cuidado de tu vehículo, o lo que prefieras.
       </p>
       <div className="prompts">
         <button className="prompt-button" onClick={() => handlePrompt('¿Qué hacer si me quedo sin batería?')}>¿Qué hacer si me quedo sin batería?</button>

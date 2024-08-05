@@ -29,7 +29,7 @@ const Header = () => {
               <a href="/">Inicio</a>
             </li>
             <li>
-              <a href="/about-us">Conocenos</a>
+              <a href="/about-us">Conócenos</a>
             </li>
             <li>
               <a href="/frenchi">Asistente</a>
@@ -38,12 +38,12 @@ const Header = () => {
               <a href="/tutoriales">Tutoriales</a>
             </li>
             <li>
-              <a href="/estadisticas">Estadisticas</a>
+              <a href="/estadisticas">Estadísticas</a>
             </li>
           </ul>
         </nav>
         <div className="actions">
-          <button className="login" onClick={handleLoginClick}>Inicia sesion</button>
+          <button className="login" onClick={handleLoginClick}>Inicia sesión</button>
           <button className="signup" onClick={handleSignUpClick}>Registrate</button>
         </div>
       </div>
