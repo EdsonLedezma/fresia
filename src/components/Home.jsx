@@ -43,21 +43,21 @@ const Home = () => {
             precisión, aseguramos un proceso de diagnóstico continuo y en 
             tiempo real, lo que permite un mantenimiento preventivo y 
             correctivo confiable para los conductores y mecánicos,
-            si tienes dudas comprueba nuestras estadisticas.</p>
-          <a href="#" className="button">Estadisticas aqui</a>
+            si tienes dudas comprueba nuestras estadísticas.</p>
+          <a href="/estadisticas" className="button">Estadísticas aqui</a>
         </div>
       </div>
       <div className="card">
-        <img src="static/IAauto.png" alt="Resources" />
+        <img src="static/IAauto.jpg" alt="Resources" />
         <div className="content">
           <h2>Asistencia inteligente, autos sin problemas</h2>
-          <p>puedes preguntarle cualquier duda a nuestro asistente mecánico Frenchi,
-            desde como realizar un cambio de aceite, especificaciones técnicas de tu vehiculo,
-            consejos de conducción, reglas de transito o cualquier cosa que tenga que ver con el
+          <p>Puedes preguntarle cualquier duda a nuestro asistente mecánico Frenchi,
+            desde como realizar un cambio de aceite, especificaciones técnicas de tu vehículo,
+            consejos de conducción, reglas de tránsito o cualquier cosa que tenga que ver con el
             ámbito automotriz.
 
           </p>
-          <a href="#" className="button">Conoce a Frenchi</a>
+          <a href="/frenchi" className="button">Conoce a Frenchi</a>
         </div>
       </div>
       <div className="card">
@@ -65,12 +65,12 @@ const Home = () => {
         <div className="content">
           <h2>Con FRES IA, cada sonido cuenta</h2>
           <p>Si durante tu conducción diaria comienzas a escuchar
-             un nuevo ruido en tu auto no lo dejes pasar, podria 
-             no ser importante o ser sintoma de un posible desajuste
+             un nuevo ruido en tu auto no lo dejes pasar, podría 
+             no ser importante o ser síntoma de un posible desajuste
              mecánico, no corras el riesgo de sufrir una 
              falla con el paso del tiempo, si te interesa aprender a 
-             usar Fres IA tenemos un tutorial completo</p>
-          <a href="#" className="button">Tutorial aqui</a>
+             usar Fres IA tenemos un tutorial completo aquí.</p>
+          <a href="/tutoriales" className="button">Tutorial aqui</a>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ const AboutUs = () => {
 
       <div className="jumbotron">
         <h2>Nuestra Misión</h2>
-        <p>Proveer soluciones tecnológicas que mejoren la vida de las personas y transformen la industria.</p>
+        <p>Ayudamos a mecánicos y propietarios de automóviles con el diagnóstico de fallas automotrices, ofreciendo una forma fácil y rápida de encontrar soluciones eficientes.</p>
       </div>
 
       <div className="cards-container">
@@ -27,8 +27,8 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="jumbotron">
-        <h2>Nuestra vision</h2>
-        <p>Proveer soluciones tecnológicas que mejoren la vida de las personas y transformen la industria.</p>
+        <h2>Nuestra visión</h2>
+        <p>Esperamos estar liderando el mercado en 10 años, trabajando junto a diferentes empresas automotrices.</p>
       </div>
     </div>
   );
