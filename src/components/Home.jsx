@@ -6,16 +6,16 @@ import ImageGallery from "react-image-gallery";
 
 const images = [
   {
-    original: "./static/11.jpg",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    original: "./static/home1.png",
+    thumbnail: "./static/home1.png",
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
+    original: "./static/home2.png",
+    thumbnail: "./static/home2.png",
   },
   {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: "./static/home3.png",
+    thumbnail: "./static/home3.png",
   },
 ];
 
@@ -44,11 +44,11 @@ const Home = () => {
             tiempo real, lo que permite un mantenimiento preventivo y 
             correctivo confiable para los conductores y mecánicos,
             si tienes dudas comprueba nuestras estadísticas.</p>
-          <a href="/estadisticas" className="button">Estadísticas aqui</a>
+          <a href="/estadisticas" className="button">Estadísticas aquí</a>
         </div>
       </div>
       <div className="card">
-        <img src="static/IAauto.jpg" alt="Resources" />
+        <img src="static/Frenchi.png" alt="Resources" />
         <div className="content">
           <h2>Asistencia inteligente, autos sin problemas</h2>
           <p>Puedes preguntarle cualquier duda a nuestro asistente mecánico Frenchi,

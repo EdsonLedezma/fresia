@@ -6,16 +6,16 @@ import ImageGallery from "react-image-gallery";
 const Tutorial  = () => {
     const images = [
         {
-          original: "./static/11.jpg",
-          thumbnail: "https://picsum.photos/id/1018/250/150/",
+          original: "./static/t1.png",
+          thumbnail: "./static/t1.png",
         },
         {
-          original: "https://picsum.photos/id/1015/1000/600/",
-          thumbnail: "https://picsum.photos/id/1015/250/150/",
+          original: "./static/t2.png",
+          thumbnail: "./static/t2.png",
         },
         {
-          original: "https://picsum.photos/id/1019/1000/600/",
-          thumbnail: "https://picsum.photos/id/1019/250/150/",
+          original: "./static/t3.png",
+          thumbnail: "./static/t3.png",
         },
       ];
       

@@ -62,6 +62,7 @@ const Frenchi = () => {
   return (
     <div className="frenchi-container">
       <h1 className="title">Pregúntale a Frenchi</h1>
+      <img className='frenchi-image' src="static\Frenchi.png" alt="Frenchi"/>
       <p className="description">
         Puedes resolver tus dudas acerca de tu vehículo. Pídeme tips de manejo, buenas prácticas para el cuidado de tu vehículo, o lo que prefieras.
       </p>
