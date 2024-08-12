@@ -44,7 +44,7 @@ const Estadisticas = () => {
           labels,  // Asignamos los nombres de las variables como etiquetas
           datasets: [
             {
-              label: 'Número de audios por autoparte',
+              label: 'Número de audios',
               data: values, // Asignamos los valores a los datos de la gráfica
               backgroundColor: 'rgba(75, 192, 192, 0.2)',
               borderColor: 'rgba(75, 192, 192, 1)',
