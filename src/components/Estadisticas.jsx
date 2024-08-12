@@ -1,6 +1,6 @@
 // /src/components/Estadisticas.jsx
 import React, { useEffect, useState } from 'react';
-import { collection, getDocs } from "firebase/firestore";
+import { getDatabase, ref, get } from "firebase/database";
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { db } from '../Auth/Conect'; // Corrected import path
@@ -10,11 +10,11 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const Estadisticas = () => {
   const [data, setData] = useState({
-    labels: [],
+    labels: [], // Nombres de las variables
     datasets: [
       {
-        label: 'Número de Autopartes',
-        data: [],
+        label: 'Número de audios',
+        data: [], // Valores de las variables
         backgroundColor: 'rgba(75, 192, 192, 0.2)',
         borderColor: 'rgba(75, 192, 192, 1)',
         borderWidth: 1,
@@ -24,29 +24,37 @@ const Estadisticas = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const querySnapshot = await getDocs(collection(db, "analisis"));
-      const rawData = querySnapshot.docs.map(doc => doc.data());
+      const db = getDatabase();
+      const dataRef = ref(db, 'micData/1/Microfonos'); // Navegar por la jerarquía de datos
+      const snapshot = await get(dataRef);
+      
+      if (snapshot.exists()) {
+        const rawData = snapshot.val();
 
-      const groupedData = rawData.reduce((acc, current) => {
-        acc[current.Marca] = (acc[current.Marca] || 0) + 1;
-        return acc;
-      }, {});
+        const labels = []; // Para almacenar los nombres de las variables
+        const values = []; // Para almacenar los valores de las variables
 
-      const labels = Object.keys(groupedData);
-      const values = Object.values(groupedData);
+        // Suponiendo que rawData es un objeto con nombres de variables como claves
+        Object.keys(rawData).forEach(key => {
+          labels.push(key); // Nombre de la variable
+          values.push(rawData[key]); // Valor de la variable
+        });
 
-      setData({
-        labels,
-        datasets: [
-          {
-            label: 'Número de Autopartes',
-            data: values,
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            borderColor: 'rgba(75, 192, 192, 1)',
-            borderWidth: 1,
-          },
-        ],
-      });
+        setData({
+          labels,  // Asignamos los nombres de las variables como etiquetas
+          datasets: [
+            {
+              label: 'Número de audios por autoparte',
+              data: values, // Asignamos los valores a los datos de la gráfica
+              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              borderColor: 'rgba(75, 192, 192, 1)',
+              borderWidth: 1,
+            },
+          ],
+        });
+      } else {
+        console.log("No data available");
+      }
     };
 
     fetchData();
@@ -54,14 +62,14 @@ const Estadisticas = () => {
 
   return (
     <div>
-      <h2>Estadísticas autopartes analizadas por marca</h2>
+      <h2>Estadísticas audios captados por autoparte</h2>
       <Bar 
         data={data} 
         options={{ 
           responsive: true, 
           plugins: { 
             legend: { position: 'top' }, 
-            title: { display: true, text: 'Número de Autopartes por Marca' } 
+            title: { display: true, text: 'Número de audios por autoparte' } 
           } 
         }} 
       />
